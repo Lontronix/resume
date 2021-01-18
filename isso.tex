@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Colors
+\definecolor{VividBlue}{HTML}{1565c0}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{37474F}
+\colorlet{heading}{VividBlue}
+\colorlet{accent}{VividBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Lonnie Gerol}
+\tagline{Seeking a co-op or internship as a Software Engineer, available starting May 2021.}
+
+\personalinfo{%
+  % You can add your own with \printinfo{symbol}{detail}
+    \email{lonnie@lonniegerol.com}
+    \phone{+8474312569}
+    \linkedin{linkedin.com/in/lonniegerol}
+    \homepage{lonniegerol.com}
+    \github{github.com/lontronix}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+
+\cvsection[page1sidebar]{Work Experience}
+
+% BBT
+\cvevent{Fullstack Freelance Mobile Developer}{Bio Behavioral Therapeutics}{May 2020 -- October 2020}{Remote}
+\appstore{https://apps.apple.com/mt/app/bbt-access/id1523959641}{https://play.google.com/store/apps/details?id=com.bbt.bbtaccess}
+\begin{itemize}
+  \item Designed and programmed native iOS and Android apps that allows patients to to ask their practitioner questions and submit refill requests. 
+  \item Schema designed and implemened using Firebase Firestore.
+   % \item Conceived and Designed an ESP32 based Data Logger and actuator for a Light Therapy Machine.
+   % \item Developed an Android/IOS application to tune and control the Machine over MQTT and read BLE beacon's data.
+   % \item Implemented the MQTT protocol to handle the high data rates necessary to the closed loop control system.
+   % \item Setup an AWS Server to host an MQTT broker using both MQTT and web-sockets and Web application as an admin-panel.
+\end{itemize}
+\cvtag{Swift | Kotlin | Javascript} 
+\cvtag{Firebase}
+\cvtag{Android | iOS}
+
+\vspace{10px}
+
+% iD Tech
+\cvevent{Virtual Tech Camp / Online Private Lesson Instructor}{iD Tech}{June 2020 -- January 2021}{Remote}
+\begin{itemize}
+    \item Authored engaging lecture material to teach courses involving Python, Machine Learning, C++, Java and Javascript to first time programmers. 
+\end{itemize}
+\cvtag{Java}
+\cvtag{C++}
+\cvtag{Python}
+\cvtag{Javascript}
+
+\vspace{10px}
+
+% SLI
+\cvevent{Student Lab Instructor}{RIT CS Department \hfill }{August 2020 -- January 2021}{Rochester, New York}
+\begin{itemize}
+    \item Help students grasp the fundamentals of Object Oriented Programming languages through working in a tutoring center and providing meaningful feedback on assignments.
+\end{itemize}
+\cvtag{Java} 
+\cvtag{Object Oriented Programming}
+
+%\cvevent{Aircraft Maintenance Engineering Internship }{Air %Algerie}{sep 2017 -- Jan 2018}{Algeria, Algiers}
+%\begin{itemize}
+ %   \item Establishment of a Peer-to-peer ATC communication %simulation.
+   % \item Troubleshooting and maintnance of a weather Radar .
+%\end{itemize}
+\cvsection{Projects}
+
+% CHIP-8
+\cvproject{CHIP-8 Emulator}{github.com/Lontronix/chip-8}
+\begin{itemize}
+  \item Authored engaging lecture material to teach courses involving Python, Machine Learning, C++, Java and Javascript to first time programmers. 
+\end{itemize}
+\cvtag{C Language} 
+
+\vspace{10px}
+
+% Personal Website
+\cvproject{Personal Website}{github.com/Lontronix/Personal-Website}
+\begin{itemize}
+  \item Authored engaging lecture material to teach courses involving Python, Machine Learning, C++, Java and Javascript to first time programmers. 
+\end{itemize}
+\cvtag{HTML} 
+\cvtag{CSS} 
+
+\vspace{10px}
+
+% Dining API
+\cvproject{Dining API}{github.com/Lontronix/Dining-API}
+\begin{itemize}
+  \item Authored engaging lecture material to teach courses involving Python, Machine Learning, C++, Java and Javascript to first time programmers. 
+\end{itemize}
+\cvtag{Pyhon} 
+\cvtag{Docker} 
+\cvtag{Flask} 
+\cvtag{Beautiful Soup} 
+
+\vspace{10px}
+
+% CSH Drink
+\cvproject{CSH Drink}{github.com/Lontronix/Drink-iOS}
+\begin{itemize}
+  \item Authored engaging lecture material to teach courses involving Python, Machine Learning, C++, Java and Javascript to first time programmers. 
+\end{itemize}
+\cvtag{Swift} 
+\cvtag{UIKit} 
+\cvtag{Cocoapods} 
+%\cvevent{Master 2 Networking and Telecommunications}{Paris-Saclay University}{Sept 2019 -- Ongoing}{France, Gif-Sur-Yvettes}
+%\cvevent{Second Year in Electronics Engineering School (BAC+4)}{Ecole National Polytechnique Alger \hfill \faMortarBoard Score: 13.53/20}{Sept 2017 -- Aug 2019}{Algeria, Algiers}
+%\cvevent{National Entrance Exam to the Grandes Ecoles d'Ingenieur }{Ecole National Polytechnique Alger \hfill \faMortarBoard Rank: 22/1500  }{Sept 2015 -- Aug 2017}{Algeria, Algiers}
+
+\clearpage
+
+\end{document}
