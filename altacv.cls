@@ -137,7 +137,7 @@
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
 \newcommand{\photo}[2]{\def\@photo{#2}\def\@photodiameter{#1}}
 \newcommand{\email}[1]{\printinfo{\emailsymbol}{\href{mailto:#1}{#1}}}
-\newcommand{\phone}[1]{\printinfo{\phonesymbol}{\href{tel:#1}{#1}}}
+\newcommand{\phone}[1]{\printinfo{\phonesymbol}{\href{tel:+18474312569}{#1}}}
 \newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{\href{https://#1}{#1}}}
 \newcommand{\linkedin}[1]{\printinfo{\linkedinsymbol}{\href{https://#1}{#1}}}
 \newcommand{\github}[1]{\printinfo{\githubsymbol}{\href{https://#1}{#1}}}
