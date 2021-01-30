@@ -203,9 +203,9 @@
 }
 
 \newcommand{\appstore}[2]{%
-  \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\faApple\hspace{0.5em}\href{#1}{App Store}}}}%
+  \ifstrequal{#1}{}{}{{\small\makebox[0.5\linewidth][l]{\faApple\hspace{0.5em}\href{#1}{App Store (#1)}}}}%
   % \newline
-  \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][l]{\faAndroid\hspace{0.5em} \href{#2}{Play Store}}}}%
+  \ifstrequal{#2}{}{}{{\small\makebox[0.5\linewidth][l]{\faAndroid\hspace{0.5em} \href{#2}{Play Store (#2)}}}}%
   \medskip\normalsize
 }
 
