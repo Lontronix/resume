@@ -13,4 +13,4 @@ purge: clean
 	git clean -fX
 
 publish: default
-	cp Resume.pdf Gerol_Resume_`date +"%m_%d_%Y"`.pdf
+	cp Resume.pdf ~/Desktop/Gerol_Resume_`date +"%m_%d_%Y"`.pdf
