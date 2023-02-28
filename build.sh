@@ -2,7 +2,7 @@
 # https://tex.stackexchange.com/questions/270755/passing-arguments-to-latex-file
 
 rm -rf out/
-mkdir out 
+mkdir out
 
 pairs=(
 	"green 5ebd3e"
